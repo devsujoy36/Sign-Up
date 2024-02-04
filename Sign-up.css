@@ -1,0 +1,208 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blueviolet;
+    box-shadow: 0px 1px 10px 1px gray;
+}
+
+.left {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.ul-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ul-list li {
+    list-style: none;
+}
+
+.ul-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 15px;
+}
+
+.ul-list li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.login a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    background-color: #FF7B03;
+    border-radius: 5px;
+}
+
+.login a:hover {
+    background-color: white;
+    color: orangered;
+    border-radius: 5px;
+}
+
+.red {
+    color: red;
+}
+
+
+
+
+section {
+    padding: 500px 0 500px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(ASignUp-Img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    animation: sujoy 5s linear infinite;
+
+}
+
+@keyframes sujoy {
+    100% {
+        filter: hue-rotate(360deg);
+
+    }
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    width: 450px;
+    height: 900px;
+    border-radius: 20px;
+    background: transparent;
+
+    border: 2px solid rgba(255, 255, 255, 0.5)
+}
+
+h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.input-box {
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+    position: relative;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.input-gender {
+    color: #fff;
+
+}
+
+.gender {
+    display: flex;
+    padding: 10px 0 0 0;
+}
+
+.gender div {
+    padding: 10px;
+}
+
+.Male,
+.Female,
+.Others {
+    color: white;
+    padding: px;
+
+}
+
+.remember {
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.remember label input {
+    margin: 3px;
+}
+
+.remember a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+}
+
+
+@media (max-width: 360px) {
+    .login-box {
+        width: 100%;
+        height: 100vh;
+        border: none;
+    }
+
+    .login-box {
+        width: 290px;
+    }
+}
